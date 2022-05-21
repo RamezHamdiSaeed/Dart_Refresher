@@ -16,7 +16,7 @@ void main(List<String> arguments) {
   // //strings
   // String name = "John";
   // String greeting = "Hello, $name";
-  // print(greeting);
+  // print(greeting + " my name is Ramez , nice to meet you");
   // //booleans
   // bool isTrue = true;
   // bool isFalse = false;
@@ -26,22 +26,39 @@ void main(List<String> arguments) {
   // aDynamic = "Hello";
   // aDynamic = true;
   // print(aDynamic);
+  // var variable = "Hello";
+  // print(variable);
+  // variable = 1;//* this is not a string so it will throw an error
+  // print(variable);
   // //constants
   // const PI = 3.14;
+  // print(PI);
+  // final PI; //* this is a constant but can be initialized later not like const
+  // PI = 3.14;
   // print(PI);
   // //lists
   // List<int> numbers = [1, 2, 3];
   // numbers.add(4);
   // numbers.addAll([5, 6, 3]);
   // numbers.removeWhere(((element) => element == 3));
-  // print(numbers);
+  // // print(numbers);
+  // for (var number in numbers) {
+  //   print(number);
+  // }
+
   // //maps
   // Map<String, int> ages = {"John": 21, "Bob": 22, "Alice": 23};
   // print(ages);
   // ages.addAll({"Ramez": 24});
-  // print(ages);
+  // print(ages.values);
+
+  Set setOfNumber = {1, 2, 3, 4, 5};
+  print(setOfNumber.elementAt(1));
+  print(setOfNumber.add(
+      5)); //* returns true if the element was added successfully (unique elements)
+  print(setOfNumber);
   // print("Hello world:\n${hello_world.calculate() + increment + 1}!");
-  //nullSafety();
+  // nullSafety();
   // doSomeWithOperators();
-  doSomeConditionalStatements();
+  // doSomeConditionalStatements();
 }

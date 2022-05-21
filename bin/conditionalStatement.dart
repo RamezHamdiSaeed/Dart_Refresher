@@ -79,4 +79,5 @@ void doSomeConditionalStatements() {
   //   }
   //   myCashe += 1000;
   // } while (myCashe >= 20000);
+// print(num.parse( "1.2") is double);
 }

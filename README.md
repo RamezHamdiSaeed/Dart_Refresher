@@ -8,28 +8,28 @@ in `lib/`, and example unit test in `test/`.
 </p>
 <ul>
 <li>
-variables
+variables, types(List, Map, String, int, double, bool, etc.), dynamic,var,final and const.
 </li>
 <br/>
 
 <li>
-null safety
+null safety.
 </li>
 <br/>
 
 <li>
-operators (arithmetic, conditional, compound assignment, increment(prefix & postfix) and decrement(prefix & postfix)
+operators (arithmetic, conditional, compound assignment, increment(prefix & postfix) and decrement(prefix & postfix).
 </li>
 <br/>
 
 <li>
-operators (arithmetic, conditional, compound assignment, increment(prefix & postfix) and decrement(prefix & postfix)
+operators (arithmetic, conditional, compound assignment, increment(prefix & postfix) and decrement(prefix & postfix).
 </li>
 <br/>
 
 
 <li>
-loops (for, while, do-while)
+loops (for, while, do-while).
 </li>
 <br/>
 </ul>
