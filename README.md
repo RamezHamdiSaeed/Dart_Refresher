@@ -8,7 +8,7 @@ in `lib/`, and example unit test in `test/`.
 </p>
 <ul>
 <li>
-variables, types(List, Map, String, int, double, bool, etc.), dynamic,var,final and const.
+variables, types(List, Map, Set, String, int, double, bool, etc.), dynamic,var,final and const.
 </li>
 <br/>
 
