@@ -26,4 +26,10 @@ operators (arithmetic, conditional, compound assignment, increment(prefix & post
 operators (arithmetic, conditional, compound assignment, increment(prefix & postfix) and decrement(prefix & postfix)
 </li>
 <br/>
+
+
+<li>
+loops (for, while, do-while)
+</li>
+<br/>
 </ul>
