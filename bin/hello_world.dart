@@ -1,5 +1,7 @@
 import 'package:hello_world/hello_world.dart' as hello_world;
 
+import 'nullSafety.dart';
+
 void main(List<String> arguments) {
   int increment = 1;
   increment = 2;
@@ -36,4 +38,5 @@ void main(List<String> arguments) {
   ages.addAll({"Ramez": 24});
   print(ages);
   print("Hello world:\n${hello_world.calculate() + increment + 1}!");
+  nullSafety();
 }
