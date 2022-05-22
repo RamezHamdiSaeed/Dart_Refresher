@@ -60,7 +60,7 @@ classes and objects(instances).
 </li>
 <br/>
 <li>
-inheritance and polymorphism.
+inheritance and polymorphism(override,overload).
 </li>
 <br/>
 <br/>

@@ -39,6 +39,17 @@ class Parent {
 }
 
 class Sibilings extends Parent {
-  Sibilings(String name, int age, [String job = "student"])
-      : super(name, job, age);
+  Sibilings(String name, int age,
+      [String job =
+          "student"]) //* there is an optional parameter and can be multiple optional parameteres using [ ] and , separated, assure the optional parameter is the last one
+      : super(name, job,
+            age); //! we need to call the super constructor to initialize the variables of the parent class
+  @override //!this is optional but recommended to override the parent class methods
+  //* we can override the methods but using the same signature and same identifier name according to variables
+  void printInfo() {
+    // TODO: implement printInfo
+    super.printInfo(); //super is used to call the parent class methods
+    print("Nice to meet you");
+  } //* we cannot overload the constructors but we can use like so Sibilings.anotherConstructor()
+//* we can overload all members of the class but we can't overload the disstructor
 }
