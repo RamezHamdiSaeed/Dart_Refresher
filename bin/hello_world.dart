@@ -77,7 +77,8 @@ void main(List<String> arguments) {
   hamdi.printInfo();
   hamdi.setJob = "trader";
   Parent parent = Parent(
-      "Ramez", "Developer", 5); //! the below methods won't run when debugging
+      "Ramez", "Developer", 25); //! the below methods won't run when debugging
+  print(Parent.noOfParents);
   //!!!!!!!!!!!!
   // parent.printInfo();
   // // parent._age = 25;//* this is a private variable so we can access it from outside the class

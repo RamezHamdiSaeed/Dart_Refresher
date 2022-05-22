@@ -4,11 +4,16 @@ class Parent {
   late String job;
   late int
       _age; //*to make a private variable we use _ before the variable name, so we can access it from outside the class
+  static int noOfParents =
+      0; //we can only access this value using third party methods like getters and setters
+  //* static variables are shared by all instances of the class
   //constructor
   Parent(this.name, this.job, this._age)
       : assert(name.isNotEmpty, "name can't be empty"),
         assert(job.isNotEmpty, "job can't be empty"),
-        assert(_age > 18, "Age must be greater than 18");
+        assert(_age > 18, "Age must be greater than 18") {
+    noOfParents++;
+  }
   /******************  */
   //methods
   void printInfo() {
