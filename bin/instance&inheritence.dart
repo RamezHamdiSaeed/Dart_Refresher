@@ -1,23 +1,32 @@
-class Parent {
+//! we use abstract to prevent instantiation from it
+abstract class Human {
+  late String name = "ramez";
+  late int age;
+  void printInfo() {}
+}
+
+//! if we use implements instead of extends we can implement several classes and abstract classes with comma separated
+//! if we use implements we need to implement/reimplement all the super classes and super abstract classes
+class Parent implements Human {
   //variables
   late String name;
   late String job;
   late int
-      _age; //*to make a private variable we use _ before the variable name, so we can access it from outside the class
+      age; //*to make a private variable we use _ before the variable name, so we can access it from outside the class
   static int noOfParents =
       0; //we can only access this value using third party methods like getters and setters
   //* static variables are shared by all instances of the class
   //constructor
-  Parent(this.name, this.job, this._age)
+  Parent(this.name, this.job, this.age)
       : assert(name.isNotEmpty, "name can't be empty"),
         assert(job.isNotEmpty, "job can't be empty"),
-        assert(_age > 18, "Age must be greater than 18") {
+        assert(age > 18, "Age must be greater than 18") {
     noOfParents++;
   }
   /******************  */
   //methods
   void printInfo() {
-    print("Name: $name, Job: $job, Age: $_age");
+    print("Name: $name, Job: $job, Age: $age");
   }
 
   //destructor
@@ -30,12 +39,12 @@ class Parent {
   //getters
   String get getName => name;
   String get getJob => job;
-  int get getAge => _age;
+  int get getAge => age;
   //setters
   set setName(String name) => this.name = name;
   set setJob(String job) =>
       (job != "trader") ? this.job = job : print("You can't be a trader");
-  set setAge(int age) => this._age = age;
+  set setAge(int age) => this.age = age;
 }
 
 class Sibilings extends Parent {

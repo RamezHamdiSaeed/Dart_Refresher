@@ -63,5 +63,10 @@ classes and objects(instances).
 inheritance and polymorphism(override,overload).
 </li>
 <br/>
+<li>
+abstracts and interfaces (actually ordinary abstract classes but with implements not extends).
+</li>
+<br/>
+<br/>
 <br/>
 </ul>
