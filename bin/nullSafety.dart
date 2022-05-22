@@ -5,8 +5,8 @@ void nullSafety() {
   // if (name != null) {
   //   print(name.length);
   // }
-  assert(name != null, "name is null");
-  print(name!.length);
+  // assert(name != null, "name is null");//* since all below statements wil no longer be executed since the name is not null
+  // print(name!.length);
 
   // print(name!.isEmpty);
 }

@@ -44,10 +44,15 @@ void main(List<String> arguments) {
   // numbers.addAll([5, 6, 3]);
   // numbers.removeWhere(((element) => element == 3));
   // // print(numbers);
-  // for (var number in numbers) {
+  // for (var number in numbers) { //* the advanced looops like for-in loops and methods which get a callback functions to be executed on each element of the list or sets (any object driven from iterable objects) depending on the iterator object fetched from iterator method(getter)
   //   print(number);
   // }
-
+  Iterable iterable = [1, 2, 3];
+  Iterator iterator = iterable.iterator;
+  while (iterator.moveNext()) {
+    print(iterator.current);
+  }
+//* so to make methods like List.where() and List.map(), we need to use the iterator object from iterator methods
   // //maps
   // Map<String, int> ages = {"John": 21, "Bob": 22, "Alice": 23};
   // print(ages);
@@ -64,5 +69,5 @@ void main(List<String> arguments) {
   // doSomeWithOperators();
   // doSomeConditionalStatements();
   // testFunctions();
-  nullSafety();
+  // nullSafety();
 }

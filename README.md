@@ -35,4 +35,8 @@ debugging (assert, print, debugger).
 </li>
 <br/>
 
+<li>
+iterables and iterators and their relations to for-in loops and methods with callbacks.
+</li>
+<br/>
 </ul>
