@@ -1,7 +1,11 @@
-<h1>
+<h1 align="center" >
 DART RefResher
 </h1>
-</br>
+<br/>
+<h2 align="center">
+Structure Programming
+</h2>
+<br/>
 <p>
 A sample command-line application with an entrypoint in `bin/`, library code
 in `lib/`, and example unit test in `test/`.
@@ -43,4 +47,13 @@ if-else,if-else if, if-else if else statements and shorthand if-else statements.
 iterables and iterators and their relations to for-in loops and methods with callbacks.
 </li>
 <br/>
+</ul>
+<br/>
+<br/>
+<!-- <h2 align="center">
+Object Oriented Programming
+</h2>
+<br/>
+<ul> -->
+
 </ul>
