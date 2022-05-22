@@ -3,7 +3,7 @@ void doSomeConditionalStatements() {
   int iphone = 25000;
   int s10plus = 20000;
   int s10 = 15000;
-  int myCashe = 20000;
+  int myCashe = 26000;
   // if (myCashe >= iphone) {
   //   print("I can buy an iphone");
   // } else if (myCashe >= s10plus) {
@@ -13,7 +13,11 @@ void doSomeConditionalStatements() {
   // } else {
   //   print("I can buy nothing");
   // }
+  myCashe = (myCashe >= iphone)
+      ? myCashe - iphone
+      : myCashe; //*shorthand if statement used instead of the original if-else statements with one statement within each block and can return value
   //* in conditon of equality we use switch cases
+  print(myCashe);
   // switch (myCashe) {
   //   case 25000:
   //     {

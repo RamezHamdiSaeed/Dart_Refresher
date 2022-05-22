@@ -1,6 +1,6 @@
 // import 'package:hello_world/hello_world.dart' as hello_world;
 
-// import 'conditionalStatement.dart';
+import 'conditionalStatement.dart';
 import 'functions.dart';
 import 'nullSafety.dart';
 // import 'nullSafety.dart';
@@ -47,11 +47,11 @@ void main(List<String> arguments) {
   // for (var number in numbers) { //* the advanced looops like for-in loops and methods which get a callback functions to be executed on each element of the list or sets (any object driven from iterable objects) depending on the iterator object fetched from iterator method(getter)
   //   print(number);
   // }
-  Iterable iterable = [1, 2, 3];
-  Iterator iterator = iterable.iterator;
-  while (iterator.moveNext()) {
-    print(iterator.current);
-  }
+  // Iterable iterable = [1, 2, 3];
+  // Iterator iterator = iterable.iterator;
+  // while (iterator.moveNext()) {
+  //   print(iterator.current);
+  // }
 //* so to make methods like List.where() and List.map(), we need to use the iterator object from iterator methods
   // //maps
   // Map<String, int> ages = {"John": 21, "Bob": 22, "Alice": 23};
@@ -67,7 +67,7 @@ void main(List<String> arguments) {
   // print("Hello world:\n${hello_world.calculate() + increment + 1}!");
   // nullSafety();
   // doSomeWithOperators();
-  // doSomeConditionalStatements();
+  doSomeConditionalStatements();
   // testFunctions();
   // nullSafety();
 }
