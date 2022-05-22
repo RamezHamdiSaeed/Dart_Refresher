@@ -71,14 +71,16 @@ void main(List<String> arguments) {
   // doSomeConditionalStatements();
   // testFunctions();
   // nullSafety();
-  Parent hamdi = Parent("Hamdi", "trader", 58)
-    ..setJob =
-        "developer"; // .. is a cascade operator recommended for custom configurations for a specific object and used to make volatile objects whith configuraton on the same statement
-  hamdi.printInfo();
-  hamdi.setJob = "trader";
-  Parent parent = Parent(
-      "Ramez", "Developer", 25); //! the below methods won't run when debugging
-  print(Parent.noOfParents);
+  Sibilings sibilings = Sibilings("Ramez", 24);
+  sibilings.printInfo();
+  // Parent hamdi = Parent("Hamdi", "trader", 58)
+  //   ..setJob =
+  //       "developer"; // .. is a cascade operator recommended for custom configurations for a specific object and used to make volatile objects whith configuraton on the same statement
+  // hamdi.printInfo();
+  // hamdi.setJob = "trader";
+  // Parent parent = Parent(
+  //     "Ramez", "Developer", 25); //! the below methods won't run when debugging
+  // print(Parent.noOfParents);
   //!!!!!!!!!!!!
   // parent.printInfo();
   // // parent._age = 25;//* this is a private variable so we can access it from outside the class

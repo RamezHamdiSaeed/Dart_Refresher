@@ -37,3 +37,8 @@ class Parent {
       (job != "trader") ? this.job = job : print("You can't be a trader");
   set setAge(int age) => this._age = age;
 }
+
+class Sibilings extends Parent {
+  Sibilings(String name, int age, [String job = "student"])
+      : super(name, job, age);
+}

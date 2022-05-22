@@ -59,4 +59,9 @@ Object Oriented Programming
 classes and objects(instances).
 </li>
 <br/>
+<li>
+inheritance and polymorphism.
+</li>
+<br/>
+<br/>
 </ul>
