@@ -1,6 +1,7 @@
-import 'package:hello_world/hello_world.dart' as hello_world;
+// import 'package:hello_world/hello_world.dart' as hello_world;
 
-import 'conditionalStatement.dart';
+// import 'conditionalStatement.dart';
+import 'functions.dart';
 // import 'nullSafety.dart';
 // import 'operators.dart';
 // import 'operators.dart';
@@ -52,13 +53,14 @@ void main(List<String> arguments) {
   // ages.addAll({"Ramez": 24});
   // print(ages.values);
 
-  Set setOfNumber = {1, 2, 3, 4, 5};
-  print(setOfNumber.elementAt(1));
-  print(setOfNumber.add(
-      5)); //* returns true if the element was added successfully (unique elements)
-  print(setOfNumber);
+  // Set setOfNumber = {1, 2, 3, 4, 5};
+  // print(setOfNumber.elementAt(1));
+  // print(setOfNumber.add(
+  //     5)); //* returns true if the element was added successfully (unique elements)
+  // print(setOfNumber);
   // print("Hello world:\n${hello_world.calculate() + increment + 1}!");
   // nullSafety();
   // doSomeWithOperators();
   // doSomeConditionalStatements();
+  testFunctions();
 }
