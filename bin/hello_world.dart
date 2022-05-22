@@ -2,6 +2,7 @@
 
 // import 'conditionalStatement.dart';
 import 'functions.dart';
+import 'nullSafety.dart';
 // import 'nullSafety.dart';
 // import 'operators.dart';
 // import 'operators.dart';
@@ -62,5 +63,6 @@ void main(List<String> arguments) {
   // nullSafety();
   // doSomeWithOperators();
   // doSomeConditionalStatements();
-  testFunctions();
+  // testFunctions();
+  nullSafety();
 }
