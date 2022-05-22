@@ -71,6 +71,11 @@ void main(List<String> arguments) {
   // doSomeConditionalStatements();
   // testFunctions();
   // nullSafety();
+  Parent hamdi = Parent("Hamdi", "trader", 58)
+    ..setJob =
+        "developer"; // .. is a cascade operator recommended for custom configurations for a specific object and used to make volatile objects whith configuraton on the same statement
+  hamdi.printInfo();
+  hamdi.setJob = "trader";
   Parent parent = Parent(
       "Ramez", "Developer", 5); //! the below methods won't run when debugging
   //!!!!!!!!!!!!

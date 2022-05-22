@@ -28,6 +28,7 @@ class Parent {
   int get getAge => _age;
   //setters
   set setName(String name) => this.name = name;
-  set setJob(String job) => this.job = job;
+  set setJob(String job) =>
+      (job != "trader") ? this.job = job : print("You can't be a trader");
   set setAge(int age) => this._age = age;
 }
