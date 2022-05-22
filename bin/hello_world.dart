@@ -2,6 +2,7 @@
 
 import 'conditionalStatement.dart';
 import 'functions.dart';
+import 'instance&inheritence.dart';
 import 'nullSafety.dart';
 // import 'nullSafety.dart';
 // import 'operators.dart';
@@ -67,7 +68,14 @@ void main(List<String> arguments) {
   // print("Hello world:\n${hello_world.calculate() + increment + 1}!");
   // nullSafety();
   // doSomeWithOperators();
-  doSomeConditionalStatements();
+  // doSomeConditionalStatements();
   // testFunctions();
   // nullSafety();
+  Parent parent = Parent(
+      "Ramez", "Developer", 5); //! the below methods won't run when debugging
+  //!!!!!!!!!!!!
+  // parent.printInfo();
+  // // parent._age = 25;//* this is a private variable so we can access it from outside the class
+  // print(parent.getAge);
+  //!!!!!!!!!!!!
 }
