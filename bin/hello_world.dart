@@ -71,8 +71,14 @@ void main(List<String> arguments) {
   // doSomeConditionalStatements();
   // testFunctions();
   // nullSafety();
-  Sibilings sibilings = Sibilings("Ramez", 24);
-  sibilings.printInfo();
+  //using mixins
+  week currentDay = week.monday;
+  print(currentDay);
+  // using RegExp in dart
+  RegExp usaPhoneNumber = new RegExp(r"^\d{3}-\d{3}-\d{4}$");
+  print(usaPhoneNumber.hasMatch("123-456-7890"));
+  // Sibilings sibilings = Sibilings("Ramez", 24);
+  // sibilings.printInfo();
   // Parent hamdi = Parent("Hamdi", "trader", 58)
   //   ..setJob =
   //       "developer"; // .. is a cascade operator recommended for custom configurations for a specific object and used to make volatile objects whith configuraton on the same statement

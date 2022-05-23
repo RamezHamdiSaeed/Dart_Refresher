@@ -67,6 +67,14 @@ inheritance and polymorphism(override,overload).
 abstracts and interfaces (actually ordinary abstract classes but with implements not extends).
 </li>
 <br/>
+<li>
+enums and private members (constructors are included) .
+</li>
 <br/>
+
+<li>
+mixins.
+</li>
 <br/>
+
 </ul>

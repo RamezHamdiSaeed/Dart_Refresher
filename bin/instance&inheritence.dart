@@ -1,7 +1,24 @@
+//enums are used to define a set of named constants
+enum week { sunday, monday, tuesday, wednesday, thursday, friday, saturday }
+
 //! we use abstract to prevent instantiation from it
-abstract class Human {
+//* we use mixins to make injectable variables and methods to many classes in different applications
+mixin identitiy {
+  late String name;
+  late int age;
+  void printName() {
+    print(name);
+  }
+}
+
+//! we use with to inject the memebers of the mixin to specific classes or abstract classes
+abstract class Human with identitiy {
   late String name = "ramez";
   late int age;
+  void printName() {
+    print(name);
+  }
+
   void printInfo() {}
 }
 
@@ -23,8 +40,20 @@ class Parent implements Human {
         assert(age > 18, "Age must be greater than 18") {
     noOfParents++;
   }
+  // we can make a private constructor
+  //! if we commented out the first constructor and uncommented the second constructor, we will get an error if we tried to instantiate from the class from outside
+  Parent._internal(this.name, this.job, this.age)
+      : assert(name.isNotEmpty, "name can't be empty"),
+        assert(job.isNotEmpty, "job can't be empty"),
+        assert(age > 18, "Age must be greater than 18") {
+    noOfParents++;
+  }
   /******************  */
   //methods
+  void printName() {
+    print(name);
+  }
+
   void printInfo() {
     print("Name: $name, Job: $job, Age: $age");
   }
