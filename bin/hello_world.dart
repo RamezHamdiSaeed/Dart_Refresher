@@ -98,18 +98,20 @@ void main(List<String> arguments) {
   // print("Enter your YearOfBirth: ");
   // print(
   //     " your age is ${DateTime.now().year - int.parse(stdin.readLineSync()!)}");
-  List<dynamic> numbers = [1, 2.5, 3, 4, 5];
+  // List<dynamic> numbers = [1, 2.5, 3, 4, 5];
   //for filtering the list but returning a new list
-  print(numbers.where((element) => isEvenPrime(element.floor())));
+  // print(numbers.where((element) => isEvenPrime(element.floor())));
   //to return first element of the list matching the condition the opposite of lastWhere()
-  print(numbers.firstWhere((element) => isEvenPrime(element.floor())));
+  // print(numbers.firstWhere((element) => isEvenPrime(element.floor())));
   //to return first index of element of the list matching the condition the opposite of lastIndexWhere()
-  print(numbers.indexWhere((element) => isEvenPrime(element.floor())));
+  // print(numbers.indexWhere((element) => isEvenPrime(element.floor())));
   //! for filtering the list but not returning a new list
-  numbers.retainWhere((element) => isEvenPrime(element.floor()));
-  print(numbers);
+  // numbers.retainWhere((element) => isEvenPrime(element.floor()));
+  // print(numbers);
   // numbers.removeWhere((element) => isEvenPrime(element.floor()));
-  print(numbers);
-  print(numbers.singleWhere((element) => isEvenPrime(element.floor()),
-      orElse: () => 2.5));
+  // print(numbers);
+  // print(numbers.singleWhere((element) => isEvenPrime(element.floor())));
+  Platform.environment.forEach((key, value) {
+    print("$key: $value");
+  });
 }
