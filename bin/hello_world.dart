@@ -1,9 +1,9 @@
 // import 'package:hello_world/hello_world.dart' as hello_world;
 
-import 'conditionalStatement.dart';
-import 'functions.dart';
-import 'instance&inheritence.dart';
-import 'nullSafety.dart';
+import '../lib/conditionalStatement.dart';
+import '../lib/functions.dart';
+import '../lib/instance&inheritence.dart';
+import '../lib/nullSafety.dart';
 // import 'nullSafety.dart';
 // import 'operators.dart';
 // import 'operators.dart';
