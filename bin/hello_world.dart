@@ -6,6 +6,7 @@ import '../lib/instance&inheritence.dart';
 import '../lib/nullSafety.dart';
 import 'dart:io';
 import 'dart:math';
+import '../lib/extensions.dart';
 // import 'nullSafety.dart';
 // import 'operators.dart';
 // import 'operators.dart';
@@ -95,9 +96,9 @@ void main(List<String> arguments) {
   // print(parent.getAge);
   //!!!!!!!!!!!!
   //* to get input from the user we use dart:io
-  // print("Enter your YearOfBirth: ");
-  // print(
-  //     " your age is ${DateTime.now().year - int.parse(stdin.readLineSync()!)}");
+  print("Enter your YearOfBirth: ");
+  print(
+      " your age is ${DateTime.now().year - numberParsing(stdin.readLineSync()!).parseInt()}");
   // List<dynamic> numbers = [1, 2.5, 3, 4, 5];
   //for filtering the list but returning a new list
   // print(numbers.where((element) => isEvenPrime(element.floor())));
@@ -111,7 +112,7 @@ void main(List<String> arguments) {
   // numbers.removeWhere((element) => isEvenPrime(element.floor()));
   // print(numbers);
   // print(numbers.singleWhere((element) => isEvenPrime(element.floor())));
-  Platform.environment.forEach((key, value) {
-    print("$key: $value");
-  });
+  // Platform.environment.forEach((key, value) {
+  //   print("$key: $value");
+  // });
 }
