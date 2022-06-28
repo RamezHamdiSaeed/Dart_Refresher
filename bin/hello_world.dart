@@ -4,6 +4,7 @@ import '../lib/conditionalStatement.dart';
 import '../lib/functions.dart';
 import '../lib/instance&inheritence.dart';
 import '../lib/nullSafety.dart';
+import 'dart:io';
 // import 'nullSafety.dart';
 // import 'operators.dart';
 // import 'operators.dart';
@@ -72,11 +73,11 @@ void main(List<String> arguments) {
   // testFunctions();
   // nullSafety();
   //using mixins
-  week currentDay = week.monday;
-  print(currentDay);
-  // using RegExp in dart
-  RegExp usaPhoneNumber = new RegExp(r"^\d{3}-\d{3}-\d{4}$");
-  print(usaPhoneNumber.hasMatch("123-456-7890"));
+  // week currentDay = week.monday;
+  // print(currentDay);
+  // // using RegExp in dart
+  // RegExp usaPhoneNumber = new RegExp(r"^\d{3}-\d{3}-\d{4}$");
+  // print(usaPhoneNumber.hasMatch("123-456-7890"));
   // Sibilings sibilings = Sibilings("Ramez", 24);
   // sibilings.printInfo();
   // Parent hamdi = Parent("Hamdi", "trader", 58)
@@ -92,4 +93,8 @@ void main(List<String> arguments) {
   // // parent._age = 25;//* this is a private variable so we can access it from outside the class
   // print(parent.getAge);
   //!!!!!!!!!!!!
+  //* to get input from the user we use dart:io
+  print("Enter your YearOfBirth: ");
+  print(
+      " your age is ${DateTime.now().year - int.parse(stdin.readLineSync()!)}");
 }
