@@ -1,15 +1,16 @@
 // import 'package:hello_world/hello_world.dart' as hello_world;
 
-import '../lib/conditionalStatement.dart';
-import '../lib/functions.dart';
-import '../lib/instance&inheritence.dart';
-import '../lib/nullSafety.dart';
-import 'dart:io';
-import 'dart:math';
-import '../lib/extensions.dart';
+// import '../lib/conditionalStatement.dart';
+// import '../lib/functions.dart';
+// import '../lib/instance&inheritence.dart';
+// import '../lib/nullSafety.dart';
+// import 'dart:io';
+// import 'dart:math';
+// import '../lib/extensions.dart';
 // import 'nullSafety.dart';
 // import 'operators.dart';
 // import 'operators.dart';
+import 'package:http/http.dart';
 
 void main(List<String> arguments) {
   // int increment = 1;
@@ -96,9 +97,9 @@ void main(List<String> arguments) {
   // print(parent.getAge);
   //!!!!!!!!!!!!
   //* to get input from the user we use dart:io
-  print("Enter your YearOfBirth: ");
-  print(
-      " your age is ${DateTime.now().year - numberParsing(stdin.readLineSync()!).parseInt()}");
+  // print("Enter your YearOfBirth: ");
+  // print(
+  //     " your age is ${DateTime.now().year - numberParsing(stdin.readLineSync()!).parseInt()}");
   // List<dynamic> numbers = [1, 2.5, 3, 4, 5];
   //for filtering the list but returning a new list
   // print(numbers.where((element) => isEvenPrime(element.floor())));
