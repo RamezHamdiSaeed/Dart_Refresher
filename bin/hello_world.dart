@@ -10,7 +10,8 @@
 // import 'nullSafety.dart';
 // import 'operators.dart';
 // import 'operators.dart';
-import 'package:http/http.dart';
+// import 'package:http/http.dart';
+import '../lib/mathQuestions.dart';
 
 void main(List<String> arguments) {
   // int increment = 1;
@@ -116,4 +117,14 @@ void main(List<String> arguments) {
   // Platform.environment.forEach((key, value) {
   //   print("$key: $value");
   // });
+  List<MathQuestions> questions = [
+    MathQuestions(question: "1+1=?", answer: 2),
+    MathQuestions(question: "2+2=?", answer: 4),
+    MathQuestions(question: "3+3=?", answer: 6),
+    MathQuestions(question: "4+4=?", answer: 8),
+    MathQuestions(question: "5+5=?", answer: 10)
+  ];
+  for (var element in questions) {
+    element.getAnswer();
+  }
 }
