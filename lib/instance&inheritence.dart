@@ -15,6 +15,7 @@ mixin identitiy {
 abstract class Human with identitiy {
   late String name = "ramez";
   late int age;
+  @override
   void printName() {
     print(name);
   }
