@@ -78,3 +78,15 @@ mixins.
 <br/>
 
 </ul>
+<br/>
+<br/>
+<h2 align="center">
+Future Operations (Async, Await)
+</h2>
+<br/>
+<ul>
+<li>
+Future Objects with different implementations (Future(),Future.delayed()...etc).
+</li>
+<br/>
+</ul>
