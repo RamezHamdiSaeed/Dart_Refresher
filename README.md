@@ -94,7 +94,7 @@ What is the use of then,catchOnError..etc.
 </li>
 <br/>
 <li>
-what is Steam and how to use it.
+what is Stream and how to use it.
 </li>
 <br/>
 </ul>
