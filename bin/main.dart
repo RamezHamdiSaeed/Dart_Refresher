@@ -1,18 +1,23 @@
 void main(List<String> args) async {
-//* Future operation without async and await to prevent make the most innermost function async
-//   final futureSum = Future.delayed(Duration(seconds: 1), sum)
-//       .then((value) => print(value))
-//       .catchError((onError) => print(onError));
-
-//! implementing the above sum using async and await (notice any Future<dynamic> will be dynamic using await)
-//* the try and catch here behaves as same as .catchError() in Future
+//* implementing the Stream operations without the async and await
+  final infiniteNumbers =
+      Stream.periodic(Duration(seconds: 1), (value) => value + 1);
+  // final infiniteNumbersSubscription = infiniteNumbers.listen((_) => _);
+  // infiniteNumbersSubscription.onData((data) =>
+  //     (data > 2) ? infiniteNumbersSubscription.cancel() : print(data));
+  // infiniteNumbersSubscription.onError((handleError) => print(handleError));
+//! using Async and Await
   try {
-    final asyncFutureSum = await Future.delayed(Duration(milliseconds: 2), sum);
-    //* the below statement behaves as same as .then() in future
-    print(asyncFutureSum);
+    await for (var numberFromFiniteNumbers in infiniteNumbers) {
+      if (numberFromFiniteNumbers < 3) {
+        print(numberFromFiniteNumbers);
+      } else {
+        break;
+      }
+    }
   } catch (error) {
-    print("returned asyncFutureSum operation with error: $error");
+    print(error);
   }
-}
 
-double sum() => 2.5 + 3.0;
+  //!!!!!!!!!!You cannot listen to same streamer using many objects !!!!!!!!!!!!!!!\\
+}
