@@ -78,3 +78,31 @@ mixins.
 <br/>
 
 </ul>
+<br/>
+<br/>
+<h2 align="center">
+Future Operations (Async, Await)
+</h2>
+<br/>
+<ul>
+<li>
+Future Objects with different implementations (Future(),Future.delayed()...etc).
+</li>
+<br/>
+<li>
+What is the use of then,catchOnError..etc.
+</li>
+<br/>
+<li>
+what is Stream and how to use it.
+</li>
+<br/>
+<li>
+how to use async and await for Future and Stream.
+</li>
+<br/>
+<li>
+What is the API and how to request using http and json.decode
+</li>
+<br/>
+</ul>
